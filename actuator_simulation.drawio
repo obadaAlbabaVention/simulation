@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" modified="2023-04-17T19:14:04.151Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="hgyGZIemE-2PNkE4kvBf" version="21.1.8" type="github">
+  <diagram id="pa1MhY5LQwv4QzBGR7po" name="Page-1">
+    <mxGraphModel dx="1505" dy="2575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BOUHQt-WAckXpttMmlNX-43" value="&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;vention_rails&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial; font-size: 16px; text-align: left;&quot;&gt;Demo (https://vention-demo.herokuapp.com/dashboard)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial; font-size: 16px; text-align: left;&quot;&gt;Production (vention.io)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=32;horizontal=1;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="10" y="10" width="800" height="960" as="geometry" />
+        </mxCell>
+        <mxCell id="BOUHQt-WAckXpttMmlNX-37" value="&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;AWS EC2 Instance on Demo or Prod.&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial; font-size: 16px; text-align: left;&quot;&gt;Demo (machine name &quot;systems&quot;)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial; font-size: 16px; text-align: left;&quot;&gt;Production (machine name &quot;gfx&quot;)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=32;horizontal=1;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="820" y="10" width="500" height="960" as="geometry" />
+        </mxCell>
+        <mxCell id="5oR6hSTxiuA2qhFnlqOt-3" value="&lt;h1&gt;vention_assembler (MachineBuilder)&lt;/h1&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left&quot;&gt;vention CAD to create assemblies&lt;/li&gt;&lt;li style=&quot;text-align: left&quot;&gt;contains tools for robot manipulation and TDOF/RDOF manipulation&lt;/li&gt;&lt;li style=&quot;text-align: left&quot;&gt;Simulation engine lives here&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="40" y="150" width="740" height="730" as="geometry" />
+        </mxCell>
+        <mxCell id="5oR6hSTxiuA2qhFnlqOt-4" value="&lt;h1&gt;mm-machine-logic (MachineLogic)&lt;/h1&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;Entry point for Actuator Programming.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;UI entry point for Simulation.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="65" y="270" width="695" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="BOUHQt-WAckXpttMmlNX-3" value="Cloud (aka. CAD, Assembler, MachineBuilder) - Context" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=32;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
+          <mxGeometry x="80" y="-90" width="1680" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BOUHQt-WAckXpttMmlNX-15" value="&lt;h1&gt;mm-execution-engine&lt;/h1&gt;&lt;div&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left&quot;&gt;Responsible for executing scripts that were created via MachineLogic&lt;/li&gt;&lt;li style=&quot;text-align: left&quot;&gt;&quot;run-time&quot; sequencer.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="865" y="160" width="410" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="Htf-oD9SOvGJnkaf1L8Y-1" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.204;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.005;entryY=0.307;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5oR6hSTxiuA2qhFnlqOt-4" target="BOUHQt-WAckXpttMmlNX-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="370" as="sourcePoint" />
+            <mxPoint x="640" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="800" y="381" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
